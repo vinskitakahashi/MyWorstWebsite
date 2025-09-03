@@ -1,6 +1,36 @@
-p {
-    color: green;
+@font-face {
+  font-family: WorstFont;
+  src: url("/fonts/comic.ttf");
+}
+
+.showcase {
+    height: 512px;
+    width: 512px;
+    float: left;
+}
+
+.username {
+    font-weight: bold;
+    text-align: left;
+    font-size: 24px;
+}
+
+.comment {
+    text-align: left;
+    font-size: 18px; 
+}
+
+h1 {
+    font-family: WorstFont;
+    color: rgb(255,0,0);
     text-align: center;
     font-size: 32px;
+}
+
+p {
+    font-family: WorstFont;
+    color: rgb(239, 207, 62);
+    text-align: center;
+    font-size: 26px;
 }
 
