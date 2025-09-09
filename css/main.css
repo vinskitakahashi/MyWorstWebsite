@@ -1,6 +1,6 @@
 @font-face {
   font-family: WorstFont;
-  src: url("/fonts/comic.ttf");
+  src: url("/fonts/consola.ttf");
 }
 
 .showcase {
@@ -9,28 +9,122 @@
     float: left;
 }
 
-.username {
-    font-weight: bold;
-    text-align: left;
-    font-size: 24px;
+.headdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
 }
 
-.comment {
-    text-align: left;
-    font-size: 18px; 
+.spaced {
+    height: 128px;
+}
+
+.glow {
+    text-shadow: 0px 0px 4px rgb(0,125,0);
+
+    animation-name: glowing;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes glowing {
+  0% {text-shadow: 0px 0px 4px rgb(0,125,0);}
+  100% {text-shadow: 0px 0px 12px rgb(0,255,0);}
+}
+
+.incompetentman {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    image-rendering: pixelated;
+    transform: scale(2);
+
+    left: anchor(right);
+    bottom: anchor(left);
+
+    animation-name: headmove;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes headmove {
+  0% {transform: rotate(8deg) scale(2) translateY(5px);}
+  100% {transform: rotate(-8deg) scale(2) translateY(0px);}
+}
+
+.coollink {
+    font-size: 20px;
+}
+
+.smalltext {
+    font-size: 16px;
+    font-style: italic;
 }
 
 h1 {
     font-family: WorstFont;
-    color: rgb(255,0,0);
-    text-align: center;
-    font-size: 32px;
-}
-
-p {
-    font-family: WorstFont;
-    color: rgb(239, 207, 62);
+    color: rgb(0, 255, 25);
     text-align: center;
     font-size: 26px;
 }
 
+h2 {
+    font-family: WorstFont;
+    color: rgb(0, 255, 25);
+    text-align: center;
+    font-size: 18px;
+}
+
+p {
+    font-family: WorstFont;
+    color: rgb(25, 200, 62);
+    font-size: 16px;
+}
+
+a {
+    font-family: WorstFont;
+    color: rgb(25, 166, 62);
+    font-size: 26px;
+    text-align: center;
+    padding: 4px;
+}
+
+body {
+    background-color:rgb(12, 40, 24);
+    margin: 0;
+}
+
+header {
+    background-color: rgb(12,24,24);
+    width: 100%;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    margin: auto;
+}
+
+nav {
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    margin: auto;
+}
+
+main {
+    padding-left: 32px;
+}
+
+footer {
+    background-color: rgb(0, 12, 0);
+    width: 100%;
+    height: 128px;
+    justify-content: center;
+    justify-self: center;
+    margin: auto;
+}
