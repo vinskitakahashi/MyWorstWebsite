@@ -57,6 +57,23 @@
   100% {transform: rotate(-8deg) scale(2) translateY(0px);}
 }
 
+.pointing {
+    justify-self: top;
+    justify-content: top;
+    align-items: top;
+
+    animation-name: pointingthis;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pointingthis {
+  0% {transform: translateX(10px);}
+  100% {transform: translateX(0px);}
+}
+
 .coollink {
     font-size: 20px;
 }
@@ -95,17 +112,20 @@ a {
 }
 
 body {
+    background: url(images/tile.png);
     background-color:rgb(12, 40, 24);
+    background-blend-mode: darken;
     margin: 0;
 }
 
 header {
-    background: url("https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/219150/ss_a2aa276b25345368d00338cfe54ebbcfa0c60168.1920x1080.jpg?t=1686261983");
+    background: url("https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/274170/ss_b2a76d2c605c7e54bf3e2ba43f835698d0bd6441.1920x1080.jpg?t=1728687900");
     background-blend-mode: darken;
-    background-color: rgb(12,24,24);
+    background-color: rgb(24,128,36);
 
     width: 100%;
     height: 128px;
+    padding-top: 64px;
     justify-content: center;
     justify-self: center;
     align-items: center;
